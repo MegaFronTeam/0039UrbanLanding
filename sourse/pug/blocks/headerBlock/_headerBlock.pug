@@ -1,0 +1,19 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock.section#headerBlock&attributes(attributes)
+		.container
+			+e.labels
+				+e.label.active  #[strong Старт]: 10 октября
+				+e.label   #[strong Обучение]: 3 месяца
+				+e.label    #[strong Рекомендовано]: уководителям с&nbsp;опытом от&nbsp;6&nbsp;месяцев до&nbsp;3&nbsp;лет
+			.row
+				.col
+					+e.inner 
+						h1 От&nbsp;эксперта  к&nbsp;руководителю: достигай результата силой команды
+						p Вы&nbsp;&mdash; тот самый руководитель, который прямо сейчас делает старт в&nbsp;управлении городскими командами. Но&nbsp;вам бывает сложно переключиться из&nbsp;позиции &laquo;Эксперт&raquo; в&nbsp;позицию &laquo;Руководитель&raquo;, который знает, как правильно делегировать задачи и&nbsp;идти со&nbsp;своей командой к&nbsp;целям нового уровня.
+						p &laquo;Урбан Лидер. СТАРТ&raquo; за&nbsp;три месяца поможет вам сделать уверенный шаг к&nbsp;роли управленца, встать в&nbsp;ряд с&nbsp;лучшими руководителями Правительства Москвы и&nbsp;построить фундамент для дальнейшей карьеры.
+				.col-lg-auto
+						+e.img-wrap
+							+e.btn.btn.btn-warning.btn-circle(href="#") Подать заявку
+							+img("img/head-img.jpg").d-none.d-lg-block
+	// end headerBlock

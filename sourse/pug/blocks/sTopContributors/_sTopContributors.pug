@@ -1,0 +1,17 @@
+mixin sTopContributors(data)
+	// start sTopContributors
+	+b.SECTION.sTopContributors.section#sTopContributors&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Лучшие участники
+				
+			+e.row.row
+				mixin item(t, p)
+					+e.col.col-lg-6
+						+e.item.card.text-center
+							.card__title!= t 
+				+item(`будут приглашены на&nbsp;финал программы  с&nbsp;торжественным вручением сертификатов`,``)
+				+item(`встретятся со&nbsp;спикерами&nbsp;&mdash; экспертами рынка  по&nbsp;управлению командами`,``)
+				+item(`получат ментора из&nbsp;числа лучших выпускников программы &laquo;Урбан&nbsp;Лидер&raquo;`,``)
+				+item(`получат преимущество в&nbsp;отборе на&nbsp;программу   &laquo;Урбан&nbsp;Лидер&raquo;`,``)
+	// end sTopContributors

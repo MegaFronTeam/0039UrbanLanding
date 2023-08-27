@@ -1,0 +1,30 @@
+.top-nav {
+			--sPT: #{rem(24)};
+	--sPB: #{rem(24)}; 
+	.container{
+		@include media-breakpoint-up(md) {
+			text-align: left;
+		}
+		text-align: center;
+		// display: flex;
+		// align-items: center;
+	}
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		--bs-gutter-y: var(--bs-gutter-x);
+
+	}
+
+
+	@include media-breakpoint-up(sm) {}
+	
+	@include media-breakpoint-up(xs) {}
+	// 
+	@include media-breakpoint-between(md, xl) {}
+	// 
+	@include media-breakpoint-only(xs) {}
+
+	@include media-breakpoint-down(xs) {}
+}
+
+

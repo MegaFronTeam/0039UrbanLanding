@@ -1,0 +1,35 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sNeadStart/_sNeadStart.pug
+include ../blocks/sSituations/_sSituations.pug
+include ../blocks/sCompetition/_sCompetition.pug
+include ../blocks/sProgram/_sProgram.pug
+include ../blocks/sAtStart/_sAtStart.pug
+include ../blocks/sTopContributors/_sTopContributors.pug
+include ../blocks/sApplyNow/_sApplyNow.pug
+include ../blocks/top-nav/_top-nav.pug
+include ../blocks/footer/_footer.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= index.head.title
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	main
+		header
+			+top-nav
+		+headerBlock
+		+sNeadStart
+		+sSituations
+		+sCompetition
+		+sProgram
+		+sAtStart
+		+sTopContributors
+		+sApplyNow

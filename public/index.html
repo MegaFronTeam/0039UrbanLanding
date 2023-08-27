@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Главная</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="css/custom-bootstrap.min.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<main>
+				<header>
+					<!-- start top-nav-->
+					<div class="top-nav block-with-lazy section">
+						<div class="container"><img src="img/logo.svg" alt=""/></div>
+					</div>
+					<!-- end top-nav-->
+				</header>
+				<!-- start headerBlock-->
+				<div class="headerBlock section" id="headerBlock">
+					<div class="container">
+						<div class="headerBlock__labels">
+							<div class="headerBlock__label active"> <strong>Старт</strong>: 10 октября
+							</div>
+							<div class="headerBlock__label">  <strong>Обучение</strong>: 3 месяца
+							</div>
+							<div class="headerBlock__label">   <strong>Рекомендовано</strong>: уководителям с&nbsp;опытом от&nbsp;6&nbsp;месяцев до&nbsp;3&nbsp;лет
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="headerBlock__inner"> 
+									<h1>От&nbsp;эксперта  к&nbsp;руководителю: достигай результата силой команды</h1>
+									<p>Вы&nbsp;&mdash; тот самый руководитель, который прямо сейчас делает старт в&nbsp;управлении городскими командами. Но&nbsp;вам бывает сложно переключиться из&nbsp;позиции &laquo;Эксперт&raquo; в&nbsp;позицию &laquo;Руководитель&raquo;, который знает, как правильно делегировать задачи и&nbsp;идти со&nbsp;своей командой к&nbsp;целям нового уровня.</p>
+									<p>&laquo;Урбан Лидер. СТАРТ&raquo; за&nbsp;три месяца поможет вам сделать уверенный шаг к&nbsp;роли управленца, встать в&nbsp;ряд с&nbsp;лучшими руководителями Правительства Москвы и&nbsp;построить фундамент для дальнейшей карьеры.</p>
+								</div>
+							</div>
+							<div class="col-lg-auto">
+								<div class="headerBlock__img-wrap">
+									<a class="headerBlock__btn btn btn-warning btn-circle" href="#">Подать заявку
+									</a><img class="d-none d-lg-block" src="img/head-img.jpg" alt="" loading="lazy"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end headerBlock-->
+				<!-- start sNeadStart-->
+				<section class="sNeadStart section" id="sNeadStart">
+					<div class="container">
+						<div class="section-title">
+							<h2>Вам точно нужен &laquo;СТАРТ&raquo;, если&nbsp;вы:</h2>
+						</div>
+						<div class="sNeadStart__row row">
+							<div class="sNeadStart__col col-lg-6">
+								<div class="sNeadStart__item card">
+									<p>сталкиваетесь с&nbsp;трудностями вхождения  руководящуюи&nbsp;роль</p>
+								</div>
+							</div>
+							<div class="sNeadStart__col col-lg-6">
+								<div class="sNeadStart__item card">
+									<p>вам кажется, что вы&nbsp;&laquo;стагнируете&raquo;  и&nbsp;чувствуете признаки демотивации  и&nbsp;выгорания</p>
+								</div>
+							</div>
+							<div class="sNeadStart__col col-lg-6">
+								<div class="sNeadStart__item card">
+									<p>устали делать всё сами и&nbsp;хотите делегировать больше задач команде</p>
+								</div>
+							</div>
+							<div class="sNeadStart__col col-lg-6">
+								<div class="sNeadStart__item card">
+									<p>не&nbsp;определились, как позиционировать себя для своих подчиненных и&nbsp;руководства и&nbsp;все еще выбираете собственный управленческий стиль</p>
+								</div>
+							</div>
+							<div class="sNeadStart__col col-lg-6">
+								<div class="sNeadStart__item card">
+									<p>тратите время и&nbsp;энергию, чтобы понять,  куда и&nbsp;к&nbsp;кому идти за&nbsp;быстрым и&nbsp;грамотным решением  сложного вопроса</p>
+								</div>
+							</div>
+							<div class="sNeadStart__col col-lg-6">
+								<div class="sNeadStart__item card">
+									<p>хотите систематизировать управленческие навыки 
+и&nbsp;получить инструменты для эффективного управления командой</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sNeadStart-->
+				<!-- start sSituations-->
+				<section class="sSituations section" id="sSituations">
+					<div class="container">
+						<div class="section-title"> 
+							<h2>Вы&nbsp;будете разбирать с&nbsp;другими участниками реальные сложные управленческие ситуации</h2>
+						</div>
+						<div class="sSituations__sub-title">
+							<div class="sSituations__sub-title-inner">Три фокусных  формата
+							</div>
+						</div>
+						<div class="sSituations__row row">
+							<div class="sSituations__col col-auto d-none d-md-block">
+								<div class="sSituations__img-wrap"><img src="img/img-1.jpg" alt="" loading="lazy"/>
+								</div>
+							</div>
+							<div class="col">
+								<ol> 
+									<li>Вы&nbsp;обсудите, как решать управленческие задачи с&nbsp;учетом структуры Правительства Москвы  и, возможно, найдете готовое решение,  уже&nbsp;обучаясь на&nbsp;программе</li>
+									<li>Вы&nbsp;будете работать в&nbsp;группах, обмениваться контактами, получать поддержку и&nbsp;делиться опытом с&nbsp;такими&nbsp;же руководителями</li>
+									<li>Вас ждет индивидуальная работа,  где вы&nbsp;сможете переосмыслить свой опыт и&nbsp;затем грамотно передавать его своим подчиненным</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sSituations-->
+				<!-- start sCompetition-->
+				<section class="sCompetition section" id="sCompetition">
+					<div class="container">
+						<div class="sCompetition__inner">
+							<div class="section-title">
+								<h2>Пройдите конкурсный отбор</h2>
+							</div>
+							<div class="sCompetition__row">
+								<div class="sCompetition__item card">
+									<div class="card__title">Заявка и анкета</div>
+									<p>Ссылка на&nbsp;анкету придет на&nbsp;почту после заполнения заявки</p>
+								</div>
+								<div class="sCompetition__item card">
+									<div class="card__title">Тестирование</div>
+									<p>Ссылка на&nbsp;тестирование придет  на&nbsp;почту после проверки анкеты  на&nbsp;соответствие формальным критериям.</p>
+									<div class="before"></div>
+									<p>
+										<a class="sCompetition__link" href="#">Узнать больше о&nbsp;критериях отбора
+										</a>
+									</p>
+									<div class="sCompetition__label">Завершите этап  <br> до&nbsp;25.09.23
+									</div>
+								</div>
+								<div class="sCompetition__item card">
+									<div class="card__title">Приглашение в&nbsp;программу</div>
+									<p>После успешного тестирования вы&nbsp;будете зачислены на&nbsp;программу &laquo;Урбан Лидер. СТАРТ raquo;</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sCompetition-->
+				<!-- start sProgram-->
+				<section class="sProgram section" id="sProgram">
+					<div class="container">
+						<div class="sProgram__row row">
+							<div class="col-lg-6 order-lg-last">
+								<div class="sProgram__panel card h3">
+									<div class="sProgram__panel-title">О программе
+									</div>
+									<div class="sProgram__line"> 
+										<svg class="iconC iconC-icon-1 ">
+											<use xlink:href="img/svg/spriteC.svg#icon-1"></use>
+										</svg>
+										<div>
+											<div class="sProgram__title-sm">3 месяца обучения: 10.10–15.12.2023
+											</div>
+										</div>
+									</div>
+									<div class="sProgram__line"> 
+										<svg class="iconC iconC-icon-2 ">
+											<use xlink:href="img/svg/spriteC.svg#icon-2"></use>
+										</svg>
+										<div>
+											<div class="sProgram__title-sm"> 3 онлайн-модуля по 6 часов каждый
+											</div>
+											<ul>
+												<li>10.10–12.10.2023</li>
+												<li>07.11–09.11.2023</li>
+												<li>05.12–07.12.2023</li>
+											</ul>
+										</div>
+									</div>
+									<div class="sProgram__line"> 
+										<svg class="iconC iconC-icon-3 ">
+											<use xlink:href="img/svg/spriteC.svg#icon-3"></use>
+										</svg>
+										<div>
+											<div class="sProgram__title-sm">Межмодульная работа по 5 часов
+											</div>
+											<ul>
+												<li>работы в парах</li>
+												<li>практика в малых группах</li>
+												<li>чаты с участниками и куратором</li>
+											</ul>
+										</div>
+									</div>
+									<div class="sProgram__line"> 
+										<svg class="iconC iconC-icon-4 ">
+											<use xlink:href="img/svg/spriteC.svg#icon-4"></use>
+										</svg>
+										<div>
+											<div class="sProgram__title-sm">Для 20% лучших участников:
+											</div>
+											<ul>
+												<li>очная встреча с вручением сертификатов: 15.12.2023</li>
+											</ul>
+										</div>
+									</div>
+									<div class="sProgram__line"> 
+										<svg class="iconC iconC-icon-5 ">
+											<use xlink:href="img/svg/spriteC.svg#icon-5"></use>
+										</svg>
+										<div>
+											<div class="sProgram__title-sm"> Для лучших из лучших
+											</div>
+											<ul>
+												<li>индивидуальная работа  <br/>с ментором — 4 месяца 15.12.2023–15.03.2024</li>
+											</ul>
+										</div>
+									</div>
+									<a class="sProgram__btn btn btn-primary w-100" href="#"> Подать заявку
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="sProgram__inner">
+									<div class="section-title">
+										<h2>Структура программы</h2>
+									</div>
+									<div class="sProgram__up-text">Модуль 1, онлайн  (10.10.2023–12.10.2023)
+									</div>
+									<div class="sProgram__title">«Роль руководителя»
+									</div>
+									<p>Здесь вы: </p>
+									<ul>
+										<li>осознаете свою мотивацию в&nbsp;роли руководителя</li>
+										<li>увидите свои сильные стороны и&nbsp;векторы роста</li>
+										<li>создадите целевой образ себя как руководителя и&nbsp;спланируете шаги развития</li>
+										<li>расширите репертуар стилей поведения в&nbsp;конфликтной ситуации</li>
+										<li>посмотрите на&nbsp;личный бренд руководителя,  как на&nbsp;инструмент влияния</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="sProgram__row row">
+							<div class="col-lg-6">
+								<div class="sProgram__time-blcok">
+									<div class="sProgram__time-title">межмодульная работа:
+									</div>
+									<div class="row">
+										<div class="col-auto">
+											<div class="sProgram__number">8
+											</div>
+											<div class="small">часов <br> занятий</div>
+										</div>
+										<div class="col-auto">
+											<div class="sProgram__number">5
+											</div>
+											<div class="small">часов самостоятельной <br>  работы</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="sProgram__inner"> 
+									<div class="sProgram__up-text">Модуль 2, онлайн (07.11.2023–09.11.2023)
+									</div>
+									<div class="sProgram__title">«Управленческий цикл»
+									</div>
+									<p>Здесь вы:</p>
+									<ul>
+										<li>освоите современные управленческие инструменты и&nbsp;технологии</li>
+										<li>сможете выбрать наиболее подходящий управленческий стиль для каждой ситуации</li>
+										<li>научитесь мотивирующей постановке задач и&nbsp;корректному делегированию</li>
+										<li>узнаете, как обеспечить выполнение заданий и&nbsp;поручений</li>
+										<li>поймете, как обратная связь влияет на&nbsp;мотивацию сотрудников и&nbsp;результативность их&nbsp;работы</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="sProgram__row row">
+							<div class="col-lg-6">
+								<div class="sProgram__inner"> 
+									<div class="sProgram__up-text">Модуль 3, онлайн (05.12.2023–07.12.2023)
+									</div>
+									<div class="sProgram__title">«Управление командой» 
+									</div>
+									<p>Здесь вы: </p>
+									<ul>
+										<li>обнаружите разницу между командой, группой и&nbsp;коллективом</li>
+										<li>сможете формировать команду с&nbsp;учетом целей подразделения, ваших ценностей, имеющегося состава людей</li>
+										<li>научитесь позитивно влиять на&nbsp;мотивацию членов команды и&nbsp;достигать стабильных результатов</li>
+										<li>узнаете, как вовлечь команду в&nbsp;изменения и&nbsp;минимизировать сопротивление</li>
+										<li>освоите арсенал инструментов по&nbsp;преодолению кризисов команды</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6 d-none d-lg-block">
+								<div class="sProgram__img-wrap"><img src="img/img-4.jpg" alt="" loading="lazy"/>
+								</div>
+							</div>
+						</div>
+						<div class="sProgram__row row">
+							<div class="col-lg-6 d-none d-lg-block"></div>
+							<div class="col-lg-6">
+								<div class="sProgram__inner"> 
+									<div class="sProgram__up-text">Финал, очно (15.12.2023)
+									</div>
+									<div class="sProgram__title">«Мероприятие для 20% лучших» 
+									</div>
+									<ul>
+										<li>встреча с&nbsp;топ-руководителем Правительства Москвы</li>
+										<li>очный нетворкинг с&nbsp;участниками, показавшими лучшие результаты</li>
+										<li>крутые спикеры</li>
+										<li>для&nbsp;10% лучших из&nbsp;лучших знакомство с&nbsp;ментором</li>
+										<li>торжественное вручение сертификатов</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="sProgram__row row">
+							<div class="col-lg-6">
+								<div class="sProgram__inner"> 
+									<div class="sProgram__up-text">Индивидуальная работа (15.12.23–15.03.24)
+									</div>
+									<div class="sProgram__title">Ментор-выпускник 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sProgram-->
+				<!-- start sAtStart-->
+				<section class="sAtStart section" id="sAtStart">
+					<div class="container">
+						<div class="section-title">
+							<h2>На «СТАРТЕ» вы</h2>
+						</div>
+						<div class="sAtStart__row row">
+							<div class="sAtStart__col col-lg-6">
+								<div class="sAtStart__item card text-center">
+									<div class="card__title">встретитесь с&nbsp;топ-руководителями</div>
+									<p>Они поделятся опытом своего пути от&nbsp;эксперта 
+до&nbsp;управленца высшего уровня в&nbsp;бизнесе и&nbsp;на&nbsp;госслужбе</p>
+								</div>
+							</div>
+							<div class="sAtStart__col col-lg-6">
+								<div class="sAtStart__item card text-center">
+									<div class="card__title">получите технологии управления командами</div>
+									<p>Все инструменты проверены флагманской программой &laquo;Урбан Лидер&raquo;</p>
+								</div>
+							</div>
+							<div class="sAtStart__col col-lg-6">
+								<div class="sAtStart__item card text-center">
+									<div class="card__title">получите пользу от&nbsp;нетворкинга</div>
+									<p>Вы&nbsp;будете регулярно получать экологичную обратную связь от&nbsp;других участников и&nbsp;делиться своими знаниями</p>
+								</div>
+							</div>
+							<div class="sAtStart__col col-lg-6">
+								<div class="sAtStart__item card text-center">
+									<div class="card__title">изучите опыт выпускников программы  &laquo;Урбан&nbsp;Лидер&raquo;</div>
+									<p>Лучшие выпускники программы станут спикерами  на&nbsp;время обучения и&nbsp;менторами для&nbsp;10% лучших участников</p>
+								</div>
+							</div>
+							<div class="sAtStart__col col-lg-6">
+								<div class="sAtStart__item card text-center">
+									<div class="card__title">получите практику на&nbsp;реальных кейсах</div>
+									<p>Все кейсы и&nbsp;задания основаны на&nbsp;проблемных ситуациях участников для прокачивания нужных навыков</p>
+								</div>
+							</div>
+							<div class="sAtStart__col col-lg-6">
+								<div class="sAtStart__item card text-center">
+									<div class="card__title">станете частью сообщества &laquo;Урбан Лидер. СТАРТ&raquo;</div>
+									<p>Вы&nbsp;продолжите получать поддержку и&nbsp;развитие в&nbsp;рамках сообщества руководителей своего уровня</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sAtStart-->
+				<!-- start sTopContributors-->
+				<section class="sTopContributors section" id="sTopContributors">
+					<div class="container">
+						<div class="section-title">
+							<h2>Лучшие участники</h2>
+						</div>
+						<div class="sTopContributors__row row">
+							<div class="sTopContributors__col col-lg-6">
+								<div class="sTopContributors__item card text-center">
+									<div class="card__title">будут приглашены на&nbsp;финал программы  с&nbsp;торжественным вручением сертификатов</div>
+								</div>
+							</div>
+							<div class="sTopContributors__col col-lg-6">
+								<div class="sTopContributors__item card text-center">
+									<div class="card__title">встретятся со&nbsp;спикерами&nbsp;&mdash; экспертами рынка  по&nbsp;управлению командами</div>
+								</div>
+							</div>
+							<div class="sTopContributors__col col-lg-6">
+								<div class="sTopContributors__item card text-center">
+									<div class="card__title">получат ментора из&nbsp;числа лучших выпускников программы &laquo;Урбан&nbsp;Лидер&raquo;</div>
+								</div>
+							</div>
+							<div class="sTopContributors__col col-lg-6">
+								<div class="sTopContributors__item card text-center">
+									<div class="card__title">получат преимущество в&nbsp;отборе на&nbsp;программу   &laquo;Урбан&nbsp;Лидер&raquo;</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sTopContributors-->
+				<!-- start sApplyNow-->
+				<section class="sApplyNow section" id="sApplyNow">
+					<div class="container">
+						<h2>Подайте заявку на&nbsp;программу и&nbsp;сделайте большой шаг к&nbsp;эффективному управлению своей командой</h2>
+						<div class="d-none d-lg-block">
+							<a class="sApplyNow__btn btn btn-warning btn-circle" href="#">Подать заявку
+							</a>
+						</div>
+						<div class="sApplyNow__row row">
+							<div class="sApplyNow__col col-lg-6"><img src="img/avatar-1.jpg" alt="" loading="lazy"/>
+								<div class="col">
+									<div class="sApplyNow__title h3">По организационным вопросам поможет куратор программы:
+									</div>
+									<div class="sApplyNow__name h4">Валерия Смирнова
+									</div>
+									<div class="small"><a href="mailto:SmirnovaVA11@edu.mos.ru"><span>SmirnovaVA11@edu.mos.ru</span></a></div>
+									<div class="small"><a href="tel:+7(910)154-63-90">+7 (910) 154-63-90</a></div>
+									<div class="small"><a href="#">
+											<svg class="icon icon-telegram ">
+												<use xlink:href="img/svg/sprite.svg#telegram"></use>
+											</svg><span> @valeria_smirn</span></a></div>
+								</div>
+							</div>
+							<div class="sApplyNow__col col-lg-6"><img src="img/avatar-2.jpg" alt="" loading="lazy"/>
+								<div class="col">
+									<div class="sApplyNow__title h3">Руководитель программы:
+									</div>
+									<div class="sApplyNow__name h4">Наталья Рафейчик
+									</div>
+									<div class="small"><a href="mailto:RafeychikNA@edu.mos.ru"><span>RafeychikNA@edu.mos.ru</span></a></div>
+									<div class="small"><a href="tel:+7(905)588-57-30">+7 (905) 588-57-30</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sApplyNow-->
+			</main>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

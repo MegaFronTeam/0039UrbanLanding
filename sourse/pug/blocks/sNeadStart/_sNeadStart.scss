@@ -1,0 +1,48 @@
+// start .sNeadStart
+.sNeadStart {
+	--sPT: #{rem(24)};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	h2{
+		color: #fff;
+	}
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		@include media-breakpoint-up(md) {
+			--bs-gutter-y: #{rem(24)};
+		}
+		--bs-gutter-y: 8px;
+	}
+	.section-title{
+		
+	}
+	&__col{
+		
+	}
+	&__item{
+		text-align: center;
+		// @include media-breakpoint-up(xl) {}
+		@include media-breakpoint-up(md) {
+
+			height: 100%;
+			min-height: rem(144);
+		}
+		p{
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 0;
+			max-width: rem(560);
+		}
+		// padding-left: rem(30);
+		// padding-right: rem(30);
+		// text-wrap: balance;
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sNeadStart

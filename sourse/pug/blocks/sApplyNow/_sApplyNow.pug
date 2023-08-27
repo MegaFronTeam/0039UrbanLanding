@@ -1,0 +1,34 @@
+mixin sApplyNow(data)
+	// start sApplyNow
+	+b.SECTION.sApplyNow.section#sApplyNow&attributes(attributes)
+		.container
+			//- +b.section-title
+			h2 Подайте заявку на&nbsp;программу и&nbsp;сделайте большой шаг к&nbsp;эффективному управлению своей командой
+			.d-none.d-lg-block
+				+e.btn.btn.btn-warning.btn-circle(href="#") Подать заявку
+			+e.row.row
+				+e.col.col-lg-6
+					+img("img/avatar-1.jpg")
+					.col
+						+e.title.h3 По организационным вопросам поможет куратор программы:
+						+e.name.h4 Валерия Смирнова
+						.small
+							a(href="mailto:SmirnovaVA11@edu.mos.ru")
+								span SmirnovaVA11@edu.mos.ru
+						.small
+							a(href="tel:+7(910)154-63-90") +7 (910) 154-63-90
+						.small
+							a(href="#")
+								+icon("telegram")
+								span  @valeria_smirn
+				+e.col.col-lg-6
+					+img("img/avatar-2.jpg")
+					.col
+						+e.title.h3 Руководитель программы:
+						+e.name.h4 Наталья Рафейчик
+						.small
+							a(href="mailto:RafeychikNA@edu.mos.ru")
+								span RafeychikNA@edu.mos.ru
+						.small
+							a(href="tel:+7(905)588-57-30") +7 (905) 588-57-30
+	// end sApplyNow
