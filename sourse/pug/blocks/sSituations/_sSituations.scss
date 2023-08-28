@@ -27,6 +27,8 @@
 		img {
 			@include a-cent;
 			// @extend .res-i;
+			opacity: 1;
+			@include mt;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
