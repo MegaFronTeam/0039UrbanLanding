@@ -22,14 +22,14 @@
 				// left: -200px;
 				top: calc(var(--sPT) * -2  - #{rem(60)});
 				// right: auto;
-				right: 970px;
+				right: 940px;
 			}
 			@include media-breakpoint-up(xl) {
-				right: 900px;
+				right: 860px;
 			}
 			
 			@include media-breakpoint-up(lg) {
-				right: 760px;
+				right: 740px;
 			}
 			 
 			@include media-breakpoint-up(md) {
@@ -76,6 +76,7 @@
 				
 				position: absolute;
 				font-size: rem(150);
+				margin-top: em(2);
 			}
 			font-size: 64px;
 			color: $warning;

@@ -7,8 +7,12 @@
 	&__inner{
 		max-width: rem(724);
 		h1{
-			margin-top: rem(40);
-			margin-bottom: em(10);
+			@include media-breakpoint-up(md) {
+				margin-top: rem(40);
+				margin-bottom: em(10);
+			}
+			margin-top: 16px;
+			margin-bottom: 16px;
 		}
 	}
 	&__btn{

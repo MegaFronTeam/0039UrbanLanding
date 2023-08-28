@@ -107,6 +107,7 @@
 			// line-height: calc(24 / 18);
 			@include a-cent1(y);
 			// @include rfs(208px);
+			margin-top: em(1.5);
 			@include media-breakpoint-up(md) {
 			font-size: rem(208px);
 		}
