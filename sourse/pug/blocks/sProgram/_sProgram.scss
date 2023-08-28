@@ -38,21 +38,29 @@
 			&:nth-child(1),
 			&:nth-child(3){
 				&::before{
-					transform: translateX(-140%);
-					bottom: 0;
+					transform: translateX(-160%);
+					// bottom: 0;
+					bottom: rem(23);
 					// top: 100%;
 				}
+			}
+			&:nth-child(1){
+				&:before{
+					bottom: rem(35);
+			}
+			margin-bottom: rem(68);
 			}
 			&:nth-child(2),
 			&:nth-child(4){
 				&:before{
 					top: 100%;
-					margin-top: rem(100px);
-					transform: scaleX(-1) translateX(140%);
+					margin-top: rem(95px);
+					transform: scaleX(-1) translateX(150%);
 				}
 				
 			}
 			&:nth-child(4){
+				margin-top: rem(88px);
 				margin-bottom: rem(352);
 			}
 			&:not(:first-child){

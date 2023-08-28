@@ -73,7 +73,7 @@
 	}
 	&__name{
 		font-weight: bold;
-		margin-bottom: 0;
+		margin-bottom: rem(4);
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
