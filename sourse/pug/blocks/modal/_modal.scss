@@ -27,6 +27,11 @@
 		width: rem(832px);
 		.row{
 			--bs-gutter-y: #{rem(24)};
+			.col-lg-6{
+				&:nth-child(2){
+					margin-bottom: 40px;
+				}
+			}
 		}
 		p,
 		ul{

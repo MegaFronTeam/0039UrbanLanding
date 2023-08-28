@@ -11,12 +11,12 @@
 			z-index: -1;		
 			@include media-breakpoint-up(lg){
 				
-				left: calc( (2976px - 9283px) - 171px);
+				left: calc( (2976px - 4692px) - 171px);
 			}
 			@include media-breakpoint-up(md){
-				left: calc((2976px - 9283px) - 501px);
-				top: calc(var(--sPT) * -2 - #{rem(355 + 256)} + (5319px - 18046px)/2);
-				content: url(../img/bg-dark2.svg);
+				left: calc((2976px - 4692px) - 501px);
+				top: calc(var(--sPT) * -2 - #{rem(355 + 256)} + (5319px - 8546px)/2);
+				content: url(../img/bg-dark4.svg);
 			}
 			top: calc(var(--sPT) * -2 - #{rem(355 + 256)} );
 			content: url(../img/bg-dark.svg);
@@ -26,6 +26,11 @@
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
+		ul{
+		& + p{
+		 margin-top: rem(-10);
+		}
+	}
 				&:not(:last-child) {
 				@include media-breakpoint-up(lg){
 					margin-bottom: rem(85);
@@ -98,6 +103,7 @@
 		font-weight: bold;
 		margin-bottom: rem(20);
 	}
+	
 	li{
 		list-style: none;
 		margin-bottom: 6px;
@@ -136,6 +142,7 @@
 		ul{
 			margin-bottom: rem(8);
 		}
+		
 		li{
 			&::before{
 				left: em(20);
