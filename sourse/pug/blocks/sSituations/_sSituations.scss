@@ -3,7 +3,8 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	@include media-breakpoint-up(md) {
-	--sTPB: #{rem(78)};
+		--sPB: #{rem(50)};
+		--sTPB: #{rem(78)};
 	}
 	h2 {
 		max-width: rem(600);
@@ -73,10 +74,13 @@
 	}
 	ol {
 		list-style: none;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+			@include media-breakpoint-up(md) {
+
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
 		@include media-breakpoint-up(xl) {
 
 			padding-top: rem(94);
@@ -87,7 +91,10 @@
 		counter-reset: num;
 	}
 	li {
-		max-width: rem(480);
+			@include media-breakpoint-up(md){
+
+				max-width: rem(480);
+			}
 		position: relative;
 		z-index: 2;
 		&::after {
@@ -103,13 +110,16 @@
 			@include media-breakpoint-up(md) {
 			font-size: rem(208px);
 		}
-		font-size: 120px;
+		font-size: 140px;
 			font-weight: bold;
 			color: #f7f7f7;
 		}
-		&:last-child {
-			max-width: rem(440);
-		}
+			@include media-breakpoint-up(md){
+
+				&:last-child {
+					max-width: rem(440);
+				}
+			}
 		&:nth-child(1),
 		&:nth-child(2) {
 			position: relative;

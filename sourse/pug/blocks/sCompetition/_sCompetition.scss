@@ -22,7 +22,7 @@
 				// left: -200px;
 				top: calc(var(--sPT) * -2  - #{rem(60)});
 				// right: auto;
-				right: 1000px;
+				right: 970px;
 			}
 			@include media-breakpoint-up(xl) {
 				right: 900px;
@@ -54,6 +54,7 @@
 	}
 		counter-reset: num;
 	&__item{
+		background: #fff;
 		p{
 			margin-bottom: 4px;
 		}
@@ -125,6 +126,7 @@
 
 	&__label{
 		position: absolute;
+		font-weight: bold;
 		@include media-breakpoint-up(lg){
 			width: rem(182);
 			height: rem(182);

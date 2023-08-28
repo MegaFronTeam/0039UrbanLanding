@@ -672,7 +672,7 @@ p{
 		bottom: 0;
 		width: 100%;
 		@include media-breakpoint-down(lg) {
-			box-shadow: 0px -10px 25px 0px rgba(8, 96, 99, 0.45);
+			box-shadow: 0px -10px 25px 0px rgba(8, 96, 99, 0.45) !important;
 		}
 		height: 56px;
 		border-radius: 8px 8px 0px 0px; 
@@ -693,7 +693,10 @@ p{
 	border-radius: 20px;
 	background: linear-gradient(180deg, #EDEDED 0%, #FFF 100%); 
 	box-shadow: 0px 8px 23px 0px rgba(0, 0, 0, 0.16);
+	@include media-breakpoint-up(md) {
 	padding: 24px;
+}
+	padding: 24px 16px;
 	min-height: 100%;
 	&__title{
 		margin-bottom: 2px;
@@ -706,4 +709,8 @@ p{
 }
 .btn-primary{
 	color: #fff !important;
+}
+
+.fancybox__container:not(.is-compact) .fancybox__slide.has-close-btn{
+	padding-top: 0;
 }
