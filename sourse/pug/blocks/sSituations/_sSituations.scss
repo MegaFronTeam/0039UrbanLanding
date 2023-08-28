@@ -99,6 +99,9 @@
 		counter-reset: num;
 	}
 	li {
+			@include media-breakpoint-down(md){
+				line-height: calc(24 / 18);
+			}
 			@include media-breakpoint-up(md){
 
 				max-width: rem(480);
@@ -118,7 +121,7 @@
 			right: 0;
 			background-image:  url(../img/number-1.svg);
 			background-repeat: no-repeat;
-			background-position: right center;
+			background-position: center center;
 			background-size: contain;
 			@include media-breakpoint-up(xl) {
 				right: rem(-20);
