@@ -45,16 +45,24 @@
 		// --bs-gutter-y: #{rem()};
 		position: relative;
 		&::after {
-			content: url(../img/triangle-white.svg);
+			@include media-breakpoint-up(md){
+
+				content: url(../img/triangle-white2.svg);
+			}
+				content: url(../img/triangle-white.svg);
 			position: absolute;
 			@include a-cent1(y);
+			@include media-breakpoint-up(xxl) {
+				margin-top: rem(180px);
+				
+			}
 			@include media-breakpoint-up(xl) {
+				margin-top: rem(280px);
 				right: var(--bs-gutter-x);
-				margin-top: rem(80px);
 			}
 			margin-top: rem(60px);
 			@include media-breakpoint-up(lg) {
-				right: -40px;
+				right: -60px;
 			}
 			
 			@include media-breakpoint-down(md) {
@@ -155,6 +163,7 @@
 	}
 	&__sub-title {
 		@include media-breakpoint-up(md) {
+			box-shadow:  -9px 16px 37px rgba(0, 0, 0, 0.11);
 
 			background-color: #fff;
 			mask-image: url(../img/mask-3.svg);
@@ -187,7 +196,7 @@
 
 			margin: auto;
 			line-height: calc(32 / 28);
-			padding-left: em(60px); 
+			padding-left: em(80px); 
 		}
 	}
 

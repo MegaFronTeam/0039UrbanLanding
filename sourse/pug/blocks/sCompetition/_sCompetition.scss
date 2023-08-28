@@ -14,32 +14,34 @@
 		&::before{
 				@include media-breakpoint-up(md) {
 
-					content: url(../img/mask-primary.svg);
+					content: url(../img/mask-primary2.svg);
 					z-index: -1;
 					position: absolute;
 				}
 			@include media-breakpoint-up(xxl) {
 				// left: -200px;
-				top: calc(var(--sPT) * -2  - #{rem(60)});
+				top: calc(var(--sPT) * -2  - #{rem(60)} - (3490px - 1119px) / 2);
 				// right: auto;
 				right: 940px;
 			}
+			--w: calc(1612px + 517px);
 			@include media-breakpoint-up(xl) {
-				right: 860px;
+				right: calc(860px  );
+				top: calc(var(--sPT) * -2  - #{rem(110)} - (3490px - 1249px) / 2);
 			}
 			
 			@include media-breakpoint-up(lg) {
-				right: 740px;
+				right: calc(740px  );
 			}
-			 
+			
 			@include media-breakpoint-up(md) {
-				right: 680px;
+				right: calc(680px  );
 			}
+			top: calc(var(--sPT) * -2  - #{rem(110)} - (3490px - 949px) / 2);
 			 
 
 			
 			// right: 70%;
-			top: calc(var(--sPT) * -2  - #{rem(110)});
 		}
 	}
 	&__row{

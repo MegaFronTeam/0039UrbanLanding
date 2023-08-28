@@ -22,7 +22,9 @@
 		
 	}
 
-
+	p{
+		margin-bottom: 0;
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
