@@ -121,7 +121,7 @@
 			right: 0;
 			background-image:  url(../img/number-1.svg);
 			background-repeat: no-repeat;
-			background-position: center center;
+			background-position: center right;
 			background-size: contain;
 			@include media-breakpoint-up(xl) {
 				right: rem(-20);
