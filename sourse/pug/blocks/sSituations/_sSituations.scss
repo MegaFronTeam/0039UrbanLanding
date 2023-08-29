@@ -65,6 +65,10 @@
 				right: -60px;
 			}
 			
+			@include media-breakpoint-down(sm) {
+
+				transform: translateY(-50%) translateX(-86%);
+			}
 			@include media-breakpoint-down(md) {
 				// right: -190px
 				left: 50%;
