@@ -190,7 +190,12 @@ a {
 
 @include media-breakpoint-down(md) {}
 
-@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(sm) {
+	.fancybox__slide{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
 
 @include media-breakpoint-down(xs) {
 
