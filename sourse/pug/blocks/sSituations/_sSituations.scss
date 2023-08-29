@@ -45,22 +45,22 @@
 		// --bs-gutter-y: #{rem()};
 		position: relative;
 		&::after {
-			@include media-breakpoint-up(md){
+			content: url(../img/triangle-white3.svg);
+			// @include media-breakpoint-up(md){
 
-				content: url(../img/triangle-white2.svg);
-			}
-				content: url(../img/triangle-white.svg);
+			// }
+			// 	content: url(../img/triangle-white.svg);
 			position: absolute;
 			@include a-cent1(y);
 			@include media-breakpoint-up(xxl) {
-				margin-top: rem(180px);
+				// margin-top: rem(180px);
 				
 			}
 			@include media-breakpoint-up(xl) {
-				margin-top: rem(280px);
+				// margin-top: rem(280px);
 				right: var(--bs-gutter-x);
 			}
-			margin-top: rem(60px);
+			// margin-top: rem(60px);
 			@include media-breakpoint-up(lg) {
 				right: -60px;
 			}
@@ -69,7 +69,7 @@
 				// right: -190px
 				left: 50%;
 				right: auto;
-				transform: translateY(-50%) translateX(-65%);
+				transform: translateY(-50%) translateX(-88%);
 			}
 			right: -170px;
 			// margin-top: rem(80px);
@@ -188,18 +188,18 @@
 		// align-items: center;
 	}
 	&__sub-title {
-		@include media-breakpoint-up(lg) {
+		@include media-breakpoint-up(xl) {
 			box-shadow:  -9px 16px 37px rgba(0, 0, 0, 0.11);
 
 			background-color: #fff;
 			mask-image: url(../img/mask-3.svg);
 			mask-repeat: no-repeat;
-			mask-size: cover;
+			mask-size: 100%;
 			mask-repeat: no-repeat;
 			mask-position: center;
 			// height: rem(690);
-			
-			@include rfs(690px, height);
+			height: rem(720);
+			// @include rfs(690px, height);
 			
 			aspect-ratio: 345 / 690;
 			top: calc(-1 * var(--sPT));
@@ -217,7 +217,7 @@
 		font-weight: bold;
 		font-size: 20px;
 		margin-bottom: 14px;
-		@include media-breakpoint-up(lg) {
+		@include media-breakpoint-up(xl) {
 			@include rfs(28px);
 
 			margin: auto;

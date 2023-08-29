@@ -14,30 +14,30 @@
 		&::before{
 				@include media-breakpoint-up(md) {
 
-					content: url(../img/mask-primary2.svg);
+					content: url(../img/mask-primary3.svg);
 					z-index: -1;
 					position: absolute;
 				}
 			@include media-breakpoint-up(xxl) {
 				// left: -200px;
-				top: calc(var(--sPT) * -2  - #{rem(60)} - (3490px - 1119px) / 2);
+				top: calc(var(--sPT) * -2  - #{rem(60)} - (3719px - 1119px) / 2);
 				// right: auto;
-				right: 940px;
+				right: 1080px;
 			}
 			--w: calc(1612px + 517px);
 			@include media-breakpoint-up(xl) {
-				right: calc(860px  );
-				top: calc(var(--sPT) * -2  - #{rem(110)} - (3490px - 1249px) / 2);
+				right: 960px;
+				top: calc(var(--sPT) * -2  - #{rem(110)} - (3719px - 1049px) / 2);
 			}
 			
 			@include media-breakpoint-up(lg) {
-				right: calc(740px  );
+				right: 750px;
 			}
 			
 			@include media-breakpoint-up(md) {
-				right: calc(680px  );
+				right: 660px;
 			}
-			top: calc(var(--sPT) * -2  - #{rem(110)} - (3490px - 949px) / 2);
+			top: calc(var(--sPT) * -2  - #{rem(110)} - (3719px - 949px) / 2);
 			 
 
 			

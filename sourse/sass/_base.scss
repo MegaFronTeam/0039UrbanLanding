@@ -24,10 +24,10 @@ html{
 }
 
 body {
-	background: linear-gradient(41deg, #38CCC1 0%, #46CCC8 8.80%, #3AC0C2 43.57%, #4CCEC6 58.88%, #50D1C7 79.81%, #018288 100%);
+	// background: linear-gradient(41deg, #38CCC1 0%, #46CCC8 8.80%, #3AC0C2 43.57%, #4CCEC6 58.88%, #50D1C7 79.81%, #018288 100%);
 
-	background: linear-gradient(41deg, #38CCC1 0%, #46CCC8 8.80%, #3AC0C2 43.57%, #4CCEC6 58.88%, #50D1C7 79.81%, #018288 100%);
-	// background: linear-gradient(379deg, #4fd1c8 55.96%, #219399 84.74%);
+	// background: linear-gradient(41deg, #38CCC1 0%, #46CCC8 8.80%, #3AC0C2 43.57%, #4CCEC6 58.88%, #50D1C7 79.81%, #018288 100%);
+	background: linear-gradient(379deg, #4fd1c8 55.96%, #219399 84.74%);
 	background-position: top right !important;
 	&[class*="fixed"],
 	&.fancybox-active{
