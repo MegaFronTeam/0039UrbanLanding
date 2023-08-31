@@ -65,21 +65,24 @@
 		font-size: 40px;
 		font-weight: 100;
 	}
-
-		&__inner{
-		overflow-y: hidden;
-		height: 100%;
-		// @extend .custom-scroll;
-		.mCSB_container{
-			@include media-breakpoint-down(md) {
-			padding-right: 18px;
-			}
-		}
-		@include media-breakpoint-up(md) {
+		.custom-scroll{
+			overflow-y: hidden;
+			height: 100%;
+			@include media-breakpoint-up(md) {
 
 			padding-right: rem(36);
 		} 
 		padding-right: 2px;
+
+		}
+		&__inner{
+		// @extend .custom-scroll;
+		@include media-breakpoint-down(md) {
+		padding-right: 18px;
+		}
+		.mCSB_container{
+		}
+		
 	}
 }
 
