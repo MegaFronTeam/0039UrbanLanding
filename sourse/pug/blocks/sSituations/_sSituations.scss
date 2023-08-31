@@ -3,8 +3,8 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	@include media-breakpoint-up(md) {
-		--sPB: #{rem(50)};
-		--sTPB: #{rem(78)};
+		--sPB: #{rem(20)};
+		--sTPB: #{rem(68)};
 	}
 	h2 {
 		max-width: rem(600);
@@ -58,7 +58,7 @@
 			}
 			@include media-breakpoint-up(xl) {
 				// margin-top: rem(280px);
-				right: var(--bs-gutter-x);
+				right: calc(var(--bs-gutter-x) / 2);
 			}
 			// margin-top: rem(60px);
 			@include media-breakpoint-up(lg) {
@@ -198,15 +198,15 @@
 			background-color: #fff;
 			mask-image: url(../img/mask-3-1.svg);
 			mask-repeat: no-repeat;
-			mask-size: 100%;
+			mask-size: contain;
 			mask-repeat: no-repeat;
-			mask-position: center;
+			mask-position: center right;
 			// height: rem(690);
-			height: rem(720);
+			height: rem(617);
 			// @include rfs(690px, height);
 			
-			aspect-ratio: 345 / 690;
-			top: calc(-1 * var(--sPT));
+			aspect-ratio: 378 / 657;
+			top: calc(-1 * var(--sPT) + 20px);
 			// top: 0;
 			position: absolute;
 			right: 16px;
@@ -226,7 +226,7 @@
 
 			margin: auto;
 			line-height: calc(32 / 28);
-			padding-left: em(80px); 
+			padding-left: em(70px); 
 		}
 	}
 

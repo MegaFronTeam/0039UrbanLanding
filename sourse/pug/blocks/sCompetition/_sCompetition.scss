@@ -22,16 +22,16 @@
 				// left: -200px;
 				top: calc(var(--sPT) * -2  - #{rem(60)} - (3719px - 1119px) / 2);
 				// right: auto;
-				right: 1080px;
+				right: 1020px;
 			}
 			--w: calc(1612px + 517px);
 			@include media-breakpoint-up(xl) {
-				right: 960px;
+				right: 900px;
 				top: calc(var(--sPT) * -2  - #{rem(110)} - (3719px - 1049px) / 2);
 			}
 			
 			@include media-breakpoint-up(lg) {
-				right: 750px;
+				right: 730px;
 			}
 			
 			@include media-breakpoint-up(md) {
